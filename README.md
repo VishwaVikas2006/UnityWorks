@@ -35,19 +35,38 @@ A responsive React frontend website for an NGO platform "UnityWorks" featuring a
 ## Project Structure
 
 UNITYWORKS/
-├── public/ # Public assets (if any)
-├── src/
-│ ├── assets/ # Team photos and images
-│ ├── pages/ # Route components: Home.jsx, Volunteer.jsx, About.jsx
-│ ├── App.jsx # Main app component with routing and navbar
-│ ├── main.jsx # React entry point
-│ ├── index.css # Global CSS resets
-│ └── App.css # App styles
-├── .gitattributes # Git attributes to manage line endings
-├── index.html # Main HTML file for Vite
-├── package.json # Project metadata and dependencies
-├── vite.config.js # Vite configuration
-└── README.md # This file
+├── node_modules/                # Installed dependencies (auto-generated)
+├── public/                      # Static assets accessible at root path (favicons, robots.txt etc.)
+│   └── favicon.ico              # Example: Site favicon
+├── src/                        # Source files
+│   ├── assets/                 # Images, logos, icons, photos
+│   │    ├── alice.jpg
+│   │    ├── michael.jpg
+│   │    └── sara.jpg
+│   │
+│   ├── components/             # Reusable UI components (buttons, cards, navbars, etc.)
+│   │    └── /* optional if you create reusable components */
+│   │
+│   ├── pages/                  # Route-specific page components
+│   │    ├── About.jsx
+│   │    ├── Home.jsx
+│   │    └── Volunteer.jsx
+│   │
+│   ├── styles/                 # CSS/SASS files - modular or global styling
+│   │    ├── App.css            # Main app-wide styles
+│   │    └── index.css          # Global resets and base styles
+│   │
+│   ├── App.jsx                 # Main app routing and layout
+│   ├── main.jsx                # React app entry point
+│   └── vite-env.d.ts           # Vite environment types (if using TypeScript)
+│
+├── .gitattributes              # Git config for line endings
+├── .gitignore                  # Files/folders ignored by git (node_modules, dist, etc.)
+├── index.html                  # Root HTML template
+├── package.json                # Project metadata and dependencies
+├── package-lock.json           # Exact dependency versions (auto-generated)
+├── vite.config.js              # Vite configuration
+└── README.md                   # Project overview and instructions
 
 
 ---
